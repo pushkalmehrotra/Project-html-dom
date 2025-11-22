@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object and Array Demo</title>
+</head>
+<body>
+    <h1>JavaScript Object and Array Operations</h1>
+    <!-- Removed the output div since we're using document.write instead -->
+
+    <script>
+        // Creating an object variable
+        let myObject = {
+            name: "John",
+            age: 30,
+            city: "New York"
+        };
+
+        // Creating an array variable
+        let myArray = ["apple", "banana", "cherry", "date"];
+
+        // Displaying the object using its keys
+        document.write("<h2>Displaying object properties using keys:</h2>");
+        for (let key in myObject) {
+            document.write(`<p>${key}: ${myObject[key]}</p>`);
+        }
+
+        // Displaying the array using index values
+        document.write("<h2>Displaying array elements using index values:</h2>");
+        for (let i = 0; i < myArray.length; i++) {
+            document.write(`<p>Index ${i}: ${myArray[i]}</p>`);
+        }
+
+        // Using join() to display the whole array as a string
+        document.write("<h2>Displaying whole array using join():</h2>");
+        let joinedArray = myArray.join(", ");
+        document.write(`<p>${joinedArray}</p>`);
+
+        // Using pop() to remove the last element and display the modified array
+        document.write("<h2>Using pop() to remove the last element:</h2>");
+        let poppedElement = myArray.pop();
+        document.write(`<p>Popped element: ${poppedElement}</p>`);
+        document.write(`<p>Array after pop(): ${myArray.join(", ")}</p>`);
+
+        // Displaying the whole array again after pop
+        document.write("<h2>Whole array after pop using join():</h2>");
+        let joinedArrayAfterPop = myArray.join(", ");
+        document.write(`<p>${joinedArrayAfterPop}</p>`);
+    </script>
+</body> 
+</html>
 
