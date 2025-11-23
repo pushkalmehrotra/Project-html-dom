@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Project</title>
+</head>
+<body>
+    <h1>My Project</h1>
+    <p>Learning objects and arrays.</p>
+    
+    <div id="output"></div>
+    
+    <script>
+        // Object
+        let person = {
+            name: "John"
+        };
+
+        // Array
+        let fruits = ["apple", "banana"];
+
+        // Show
+        let output = document.getElementById("output");
+        output.innerHTML = "Name: " + person.name + "<br>";
+        output.innerHTML += "First fruit: " + fruits[0] + "<br>";
+        output.innerHTML += "Second fruit: " + fruits[1] + "<br>";
+        output.innerHTML += "All: " + fruits.join(" ") + "<br>";
+        let popped = fruits.pop();
+        output.innerHTML += "Popped: " + popped + "<br>";
+        output.innerHTML += "Left: " + fruits.join(" ") + "<br>";
+    </script>
+    
+    <p>Done.</p>
+</body>
+</html>
